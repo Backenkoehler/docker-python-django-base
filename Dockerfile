@@ -3,7 +3,7 @@ FROM python:2.7-stretch
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && apt-get install -y \
         mysql-client \
         postgresql-client libpq-dev \
         build-essential libssl-dev \
