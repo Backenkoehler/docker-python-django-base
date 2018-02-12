@@ -9,5 +9,5 @@ RUN apt-get update && apt-get install -y \
         build-essential libssl-dev \
         sqlite3 \
         gcc \
-        nodejs npm \
+        nodejs \
     --no-install-recommends && rm -rf /var/lib/apt/lists/* && npm install -g less
