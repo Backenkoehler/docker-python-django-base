@@ -4,7 +4,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 RUN apt-get update && apt-get install -y \
-        mysql-client libmysqlclient-dev \
+        mysql-client \
         postgresql-client libpq-dev \
         sqlite3 \
         gcc \
